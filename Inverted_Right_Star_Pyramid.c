@@ -3,12 +3,12 @@ int main(){
     int i,j,rows;
     printf("Enter the number of rows:\n");
     scanf("%d", &rows);
-    printf("Displaying the Right star pyramid:\n");
+    printf("Displaying the Inverted Right Star Pyramid:\n");
     for(i=0;i<rows;i++){
-        for(j=0;j<=rows-i;j++){
+        for(j=rows;j>rows-i;j--){
             printf(" ");
         }
-        for(j=0;j<=i;j++){
+        for(j=rows;i<j;j--){
             printf("*");
         }
         printf("\n");
