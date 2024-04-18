@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main() {
+    // Program to print whether a number is Armstrong or not
   int num, digit,temp,sum=0;
 
   printf("Enter an integer: ");
