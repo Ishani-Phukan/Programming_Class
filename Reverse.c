@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 int main() {
-  int num, digit;
+  // Program to print the reverse of a number
 
+  int num, digit;
+  
   printf("Enter an integer: ");
   scanf("%d", &num);
 
