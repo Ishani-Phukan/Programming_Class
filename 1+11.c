@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int n,sum=0, count=1, i=1;
+    int n,sum=0, count=1, i=1, total=0;
     printf("Enter n: ");
     scanf("%d",&n);
     
@@ -9,6 +9,10 @@ int main(){
         i=i*10;
         printf("The sum is %d\n",sum);
         count++;
+        total=total+sum;
+        printf("%d", total);
     }
+    
+
     return 0;
 }
