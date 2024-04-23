@@ -4,15 +4,15 @@ int main(){
     printf("Enter your no. ");
     scanf("%d", &no);
     if(no==2){
-        printf("P");
+        printf("2 is a Prime Number");
     }
     while(i<=no && no!=2){
         if(no%i==0){
-            printf("np");
+            printf("%d is not a Prime Number", no);
             break;
         }
         else{
-            printf("p");
+            printf("%d is a Prime Number",no);
             break;
         }
         i++;
