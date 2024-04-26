@@ -1,12 +1,26 @@
 #include<stdio.h>
-int main(){
-    int n1,n2,i=2;
-    printf("Enter two numbers:\n ");
-    scanf("%d %d",&n1,&n2);
-    printf("The factors are:\n");
-    while(n1%i==0 && n2%i==0){
-        printf("%d \n", i);
-        i++;
+// Write a C program that calculates the HCF and LCM of two numbers.
+
+#include <stdio.h>
+
+int main() {
+  int a, b;
+  printf("Enter the two numbers: ");
+  scanf("%d%d", &a, &b);
+
+  int large = (a > b) ? a : b;
+  int hcf = 1;
+
+  // find the HCF
+  for (int i = 1; i <= large; i++) {
+    if (a % i == 0 && b % i == 0) {
+      hcf = i;
     }
-    return 0;
+  }
+  printf("The HCF of %d and %d is %d \n", a, b, hcf);
+
+  // find the LCM
+  int lcm = (a * b) / hcf;
+  printf("The LCM of %d and %d is %d \n", a, b, lcm);
+  return 0;
 }
